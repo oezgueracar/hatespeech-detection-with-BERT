@@ -1,3 +1,7 @@
+# Authors
+
+Özgür Güler, [@oezgueracar](https://github.com/oezgueracar)
+
 # Information
 
 ## Hate Speech Training Model based on BERT
