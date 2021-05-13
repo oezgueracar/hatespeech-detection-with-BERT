@@ -19,7 +19,9 @@ In short, the dataset includes a column for the comment, a column whether the co
 The following Files are part of the training pipeline:
 
 * 1_train_bert.ipynb
-* 2_predict.ipynb
+* 2_create_bert_features.ipynb
+* 3_train_xgboost.ipynb
+* 4_predict.ipynb
 * functions.py
 * bert_functions_modified.py
 
@@ -27,9 +29,16 @@ The following Files are part of the training pipeline:
 
 This python notebook will take the raw dataset and will train the base BERT model.
 
-### 2_predict
+### 2_create_bert_features
+...
+
+### 3_train_xgboost
+...
+
+### 4_predict
 
 By providing either the base BERT model from step 1, this file will allow to use the model to classify unseen text whether it's hate speech or not.
+...
 
 ### functions and bert_functions_modified
 
