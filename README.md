@@ -1,8 +1,8 @@
 # Authors
 
-Özgür Güler, [@oezgueracar](https://github.com/oezgueracar)
-Tan Xiao, [@xiao-gh](https://github.com/xiao-gh)
-Xie Yichun, [@Y1CX](https://github.com/y1cx)
+* Özgür Güler, [@oezgueracar](https://github.com/oezgueracar)
+* Tan Xiao, [@xiao-gh](https://github.com/xiao-gh)
+* Xie Yichun, [@Y1CX](https://github.com/y1cx)
 
 # Information
 
