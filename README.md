@@ -12,7 +12,7 @@ A BERT model/pipeline that is using a dataset to identify hate speech from vario
 
 The code is modified, extended and shortened according to our needs. For further information about the dataset and the model, see *References* further below.
 
-In short, the dataset includes a column for the comment, a column whether the comment was hate speech (1) or not (0), and a column for it source (Reddit, Twitter, Wikipedia, Youtube). More details can also be found in our report.
+In short, the dataset includes a column for the comment, a column whether the comment was hate speech (1) or not (0), and a column for its source (Reddit, Twitter, Wikipedia, Youtube). More details can also be found in our report.
 
 ## Pipeline Structure
 
@@ -22,7 +22,7 @@ The following Files are part of the training pipeline:
 * 2_create_bert_features.ipynb
 * 3_train_xgboost.ipynb
 * 4_predict.ipynb
-* functions.py
+* functions_modified.py
 * bert_functions_modified.py
 
 ### 1_train_bert
@@ -30,19 +30,20 @@ The following Files are part of the training pipeline:
 This python notebook will take the raw dataset and will train the base BERT model.
 
 ### 2_create_bert_features
-...
+
+This script will use the trianed BERT model to create BERT features on the full training dataset, which will later be used as the input of XGBoost training.
 
 ### 3_train_xgboost
-...
+
+With input of the BERT featuresthe, XGBoost classifier will be trained and the performance will be evaluated on the test set.
 
 ### 4_predict
 
-By providing either the base BERT model from step 1, this file will allow to use the model to classify unseen text whether it's hate speech or not.
-...
+By providing the trained BERT model from script 1 and the XGBoost classifier from script 3, this file will achieve the task of classifying unseen text to see whether it's hate speech or not.
 
-### functions and bert_functions_modified
+### functions_modified and bert_functions_modified
 
-These are helper files that need to be in the working directory in order for the BERT training to work. In case of Colab, they need to be uploaded (along the dataset) to /content/ first.
+These are helper functions that need to be in the working directory in order for the training and evaluations of the models to work.
 
 # References
 
